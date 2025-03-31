@@ -36,7 +36,7 @@ st.title("Deepfake Audio Detector 🎵🤖")
 st.write("Upload an audio file (.wav) to check if it's real or fake.")
 
 # File uploader
-uploaded_file = st.file_uploader("Upload a .wav file", type=["wav"])
+uploaded_file = st.file_uploader("Upload a .wav or .mp3 file", type=["wav", "mp3"])
 
 if uploaded_file is not None:
     st.audio(uploaded_file, format="audio/wav")
